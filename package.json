@@ -1,0 +1,32 @@
+{
+    "name": "todomvc-derivable",
+    "version": "0.0.1",
+    "author": "Matthew Campbell",
+
+    "dependencies": {
+        "todomvc-common": "1.0.2",
+        "todomvc-app-css": "2.0.6",
+        "derivable": "0.12.1",
+        "immutable": "3.8.1",
+        "react": "15.3.0",
+        "react-dom": "15.3.0",
+        "director": "1.2.8"
+    },
+
+    "devDependencies": {
+        "gulp": "3.9.1",
+        "gulp-concat": "2.6.0",
+        "gulp-util": "3.0.7",
+        "gulp-mocha": "3.0.0",
+        "vinyl-source-stream": "1.1.0",
+        "del": "2.2.1",
+        "run-sequence": "1.2.2",
+        "babelify": "7.3.0",
+        "browserify": "13.1.0",
+        "babel-preset-es2015": "6.13.2",
+        "babel-preset-react": "6.11.1",
+        "babel-register": "6.11.6",
+        "mocha": "3.0.2",
+        "chai": "3.5.0"
+    }
+}
