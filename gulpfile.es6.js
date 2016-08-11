@@ -6,7 +6,6 @@ import browserify from 'browserify';
 import babelify from 'babelify';
 import source from 'vinyl-source-stream';
 import {log as logger} from 'gulp-util';
-import mocha from 'gulp-mocha';
 
 const dependencies = Object
     .getOwnPropertyNames(
@@ -109,19 +108,4 @@ gulp.task('default', (cb) => {
         'clean',
         ['entry', 'styles', 'vendor', 'bundle']
     );
-});
-
-
-
-gulp.task('test', () => {
-    return gulp
-        .src(
-            ['test/**/*.js']
-        )
-        .pipe(
-            mocha({
-                reporter: 'spec',
-                debugBrk: false
-            })
-        );
 });
