@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {onEnter} from './utils';
 import {add} from './actions';
 
 
-class Header extends Component {
+class Header extends PureComponent {
 
     constructor() {
         super();
@@ -22,7 +22,7 @@ class Header extends Component {
                 <input className="new-todo"
                         placeholder="What needs to be done?"
                         value={that.state.name}
-                        onChange={ e => { that.setState({ name: e.target.value }) } }
+                        onChange={ e => { that.setState({ name: e.target.value }); } }
                         onKeyPress={onEnter((e) => {
                             add(e.target.value);
                             that.setState({name: ''});
