@@ -9,3 +9,4 @@ There are some extra test cases that highlight times in DerivableJS.  These can 
 
     node node_modules\mocha\bin\mocha --compilers .:.\test\compiler.js .\test\More.Derivable.js
 
+Andrey Popp has a [nice set of higher order components](https://github.com/andreypopp/react-derivable) for DerivableJS.
